@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            width: 100%;
+        }
+        
+        #left {
+            display: flex;
+            width: 20%;
+            margin-top: 10px;
+        }
+        
+        #center {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 30%;
+            margin-top: 30px;
+        }
+        
+        #right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            width: 40%;
+        }
+        
+        #right-1 {
+            display: flex;
+            margin-top: 30px;
+            justify-content: flex-end;
+            width: 80%;
+        }
+        
+        #container1 {
+            display: flex;
+            width: 100%;
+        }
+        
+        #left-1 {
+            display: flex;
+            width: 20%;
+        }
+        
+        #Mid {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin-top: 30px;
+        }
+        
+        #Mid-1 {
+            display: flex;
+            justify-content: space-around;
+            width: 20%;
+        }
+        
+        #Mid-2 {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        #Mid-3 {
+            display: flex;
+            width: 100%;
+        }
+        
+        #Mid-3-1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 20px;
+            width: 70%;
+        }
+        
+        #Mid-3-2 {
+            display: flex;
+            justify-content: space-around;
+            height: 20px;
+            align-items: center;
+            width: 20%;
+        }
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+        
+            'menu main  right '
+            'menu  footer header ';
+          gap: 10px;
+          padding: 2px;
+          width: 80%;
+          height: 400px;
+          margin-top: 20px;
+        }
+        
+        .grid-container > div {
+          text-align: start;
+          font-size: 30px;
+        }
+        
+        #Mid-5 {
+            display: flex;
+            width: 100%;
+        }
+        
+        #Mid-5-1 {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-top: 20px;
+        }
+        
+        #Mid-5-1-2 {
+            display: flex;
+        }
+        
+        #Mid-5-1-2-1 {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <img src="images/Image 1713.png" alt="">
+        </div>
+        <div id="center">
+            <div>Home</div>
+            <div>Promotions</div>
+            <div>Best-sellers</div>
+            <div>New releases</div>
+            <div>Support</div>
+        </div>
+        <div id="right">
+            <div id="right-1">
+                <form action="">
+                    <input type="text" placeholder="Search product ..." value=""> <br> <br>
+                </form>
+            </div>
+            <div>
+                <img src="images/Bell 1.png" alt="">
+                <img src="images/Shopping cart simple 1.png" alt="">
+                <img src="images/Avatar 758.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="container1">
+        <div id="left-1"></div>
+        <div id="Mid">
+            <div id="Mid-1">
+                <div>Home/</div>
+                <div>Catetory/</div>
+                <div>Product title</div>
+            </div>
+            <div id="Mid-2">
+                <h1>Product title</h1>
+            </div>
+            <div id="Mid-3">
+                <div id="Mid-3-1">
+                    <img src="images/Rating 317.png" alt="">
+                    <p>4.20(99 review)</p>
+                </div>
+                <div id="Mid-3-2">
+                    <img src="images/share.png" alt=""><br>Share
+                    <img src="images/Heart 23.png" alt=""> <br>Save
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="item1"><img src="images/Image 1709.png" alt=""></div>
+                <div class="item2"><img src="images/Image 1705.png" alt=""></div>
+                <div class="item3"><img src="images/Image 1708.png" alt=""></div>  
+                <div class="item4"><img src="images/Image 1707.png" alt=""></div>
+                <div class="item5"><img src="images/Image 1706.png" alt=""></div>
+              </div>
+              <div id="Mid-5">
+                <div id="Mid-5-1">
+                    <div id="Mid-5-1-1">
+                        <h2>Product description</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odio exercitationem perferendis? Dolor tenetur beatae hic itaque, reprehenderit blanditiis fugit aperiam, nemo necessitatibus, inventore omnis architecto repudiandae
+                            quos? Eveniet, assumenda! Illo doloremque vi quibusdam provident ipsam repellat, repudiandae omnis iste beatae laudantium libero voluptate delectus ill</p>
+                    </div>
+                    <div id="Mid-5-1-2">
+                        <div id="Mid-5-1-2-1">
+                            <img src="images/Truck 1.png" alt=""> <br> Free Delivery
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+</body>
+</html>
